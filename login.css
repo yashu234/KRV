@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login {
+  width: 100%;
+  max-width: 350px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.login h2 {
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.login input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #eee;
+  font-size: 15px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login input::placeholder {
+  color: #888;
+}
+
+.login input:focus {
+  outline: none;
+  background-color: #252525;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.login .submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login .submit:hover {
+  background-color: #2980b9;
+  transform: scale(1.03);
+}

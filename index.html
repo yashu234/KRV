@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KRV</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="nav-bar">
+    <div class="nav-logo border"></div>
+
+    <div class="nav-op1 border">
+      <div class="deliver-to">
+        <p class="small-text">Deliver To</p>
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>India</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-button border"><a href="index.html"><p>Home</p></a></div>
+    <div class="nav-op3 border"><a href="product.html" class="nav-op2">Products</a></div>
+    <div class="nav-op4 border"><a href="about.html" class="nav-op2">About</a></div>
+    <div class="nav-op5 border"><a href="upcoming.html" class="nav-op2">Upcoming</a></div>
+
+    <div class="nav-op6 border">
+      <i class="fa-solid fa-user"></i>
+      <a href="login.html" class="nav-op2">Login</a>
+    </div>
+
+    <div class="nav-op7 border">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <a href="cart.html" class="nav-op2">Cart</a>
+    </div>
+
+    <div class="nav-op8 border">
+      <a href="help.html" class="nav-op2">Help</a>
+      <i class="fa-solid fa-headset"></i>
+    </div>
+  </div>
+
+  <!-- Welcome Message -->
+  <div id="welcomeUser" style="color: white; padding: 10px; font-size: 18px; text-align: center; margin-top: 60px;"></div>
+
+  <!-- Bar -->
+  <div class="bar">
+    <div class="dots border">
+      <i class="fa-solid fa-ellipsis-vertical fa-flip-vertical" style="color: #ffffff;"></i>
+    </div>
+
+    <div class="bar-op1 border"><a href="bestseller.html" class="nav-op2">Best Sellers</a></div>
+    <div class="bar-op2 border"><a href="offer.html" class="nav-op2">Offers %</a></div>
+
+    <div class="bar-selecter border">
+      <label for="bar-selecter">ALL</label>
+      <select name="ALL" id="bar-selecter">
+        <option value="BEARINGS">BEARINGS</option>
+        <option value="CROSS">CROSS</option>
+        <option value="BLADE BOX">BLADE BOX</option>
+        <option value="ACCESSORIES">ACCESSORIES</option>
+      </select>
+    </div>
+
+    <div class="bar-search border">
+      <input type="text" placeholder="Search! best here..." />
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="large border">
+      <a href="shipment.html" class="nav-op2">Large Shipment</a>
+      <i class="fa-solid fa-truck"></i>
+    </div>
+
+    <div class="offers border">
+      <a href="track.html" class="nav-op2">Track Order</a>
+      <i class="fa-solid fa-box"></i>
+    </div>
+
+    <div class="Contact border">
+      <a href="contact.html" class="nav-op2">Contact</a>
+      <i class="fa-solid fa-phone fa-flip-vertical"></i>
+    </div>
+  </div>
+
+  <!-- Product Images -->
+  <div class="product-showcase">
+    <img src="6302zz.png" alt="6302ZZ" />
+    <img src="6204zz.png" alt="6204ZZ" />
+    <img src="6205.png" alt="6205" />
+    <img src="cross.png" alt="Cross Bearing" />
+  </div>
+
+  <!-- Boxes -->
+  <div class="back">
+    <div class="box-container">
+      <div class="box box1">
+        <h2>Product 1</h2>
+        <p>High-quality bearing for heavy-duty use.</p>
+      </div>
+      <div class="box box2">
+        <h2>Product 2</h2>
+        <p>Precision-engineered cross bearing component.</p>
+      </div>
+      <div class="box box3">
+        <h2>Product 3</h2>
+        <p>Durable accessories to enhance performance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Repeats -->
+  <div class="back"></div>
+  <div class="back"></div>
+
+  <!-- JS to Display Logged In Username -->
+  <script>
+    const user = localStorage.getItem("loggedInUser");
+    if (user) {
+      document.getElementById("welcomeUser").textContent = `Welcome, ${user}!`;
+    }
+  </script>
+</body>
+</html>

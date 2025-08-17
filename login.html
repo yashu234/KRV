@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    body {
+      background: #121212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .login {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+      text-align: center;
+      width: 300px;
+    }
+    .login h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+    .login input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: #1e1e1e;
+      color: white;
+    }
+    .login button {
+      padding: 10px;
+      width: 100%;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="login">
+    <h2>Welcome Back</h2>
+    <input type="text" id="username" placeholder="User ID" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (username === "naitik" && password === "KRV123") {
+        localStorage.setItem("loggedInUser", username);
+        alert("Login successful!");
+        window.location.href = "index.html";
+      } else {
+        alert("Invalid username or password.");
+      }
+    }
+  </script>
+</body>
+</html>

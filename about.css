@@ -1,0 +1,66 @@
+
+/* Reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #ff9800;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #ddd;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: '•';
+  color: #4caf50;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+a {
+  color: #03a9f4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
