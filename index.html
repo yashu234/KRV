@@ -18,111 +18,120 @@
         <p class="small-text">Deliver To</p>
         <div class="location">
           <i class="fa-solid fa-location-dot"></i>
-          <p>India</p>
+          <p class="large-text">India</p>
         </div>
       </div>
     </div>
 
-    <div class="nav-button border"><a href="index.html"><p>Home</p></a></div>
-    <div class="nav-op3 border"><a href="product.html" class="nav-op2">Products</a></div>
-    <div class="nav-op4 border"><a href="about.html" class="nav-op2">About</a></div>
-    <div class="nav-op5 border"><a href="upcoming.html" class="nav-op2">Upcoming</a></div>
-
-    <div class="nav-op6 border">
-      <i class="fa-solid fa-user"></i>
-      <a href="login.html" class="nav-op2">Login</a>
-    </div>
-
-    <div class="nav-op7 border">
-      <i class="fa-solid fa-cart-shopping"></i>
-      <a href="cart.html" class="nav-op2">Cart</a>
-    </div>
-
-    <div class="nav-op8 border">
-      <a href="help.html" class="nav-op2">Help</a>
-      <i class="fa-solid fa-headset"></i>
-    </div>
-  </div>
-
-  <!-- Welcome Message -->
-  <div id="welcomeUser" style="color: white; padding: 10px; font-size: 18px; text-align: center; margin-top: 60px;"></div>
-
-  <!-- Bar -->
-  <div class="bar">
-    <div class="dots border">
-      <i class="fa-solid fa-ellipsis-vertical fa-flip-vertical" style="color: #ffffff;"></i>
-    </div>
-
-    <div class="bar-op1 border"><a href="bestseller.html" class="nav-op2">Best Sellers</a></div>
-    <div class="bar-op2 border"><a href="offer.html" class="nav-op2">Offers %</a></div>
-
-    <div class="bar-selecter border">
-      <label for="bar-selecter">ALL</label>
-      <select name="ALL" id="bar-selecter">
-        <option value="BEARINGS">BEARINGS</option>
-        <option value="CROSS">CROSS</option>
-        <option value="BLADE BOX">BLADE BOX</option>
-        <option value="ACCESSORIES">ACCESSORIES</option>
+    <div class="nav-search">
+      <select class="search-select">
+        <option>All</option>
       </select>
+      <input placeholder="Search KRV" class="search-input" />
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
     </div>
 
-    <div class="bar-search border">
-      <input type="text" placeholder="Search! best here..." />
-      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="nav-op2 border">
+      <span>Hello, sign in</span>
+      <p class="nav-second">Account & Lists</p>
     </div>
 
-    <div class="large border">
-      <a href="shipment.html" class="nav-op2">Large Shipment</a>
-      <i class="fa-solid fa-truck"></i>
+    <div class="nav-op3 border">
+      <span>Returns</span>
+      <p class="nav-second">& Orders</p>
     </div>
 
-    <div class="offers border">
-      <a href="track.html" class="nav-op2">Track Order</a>
-      <i class="fa-solid fa-box"></i>
-    </div>
-
-    <div class="Contact border">
-      <a href="contact.html" class="nav-op2">Contact</a>
-      <i class="fa-solid fa-phone fa-flip-vertical"></i>
+    <div class="nav-cart border">
+      <i class="fa-solid fa-cart-shopping"></i>
+      Cart
     </div>
   </div>
 
-  <!-- Product Images -->
-  <div class="product-showcase">
-    <img src="6302zz.png" alt="6302ZZ" />
-    <img src="6204zz.png" alt="6204ZZ" />
-    <img src="6205.png" alt="6205" />
-    <img src="cross.png" alt="Cross Bearing" />
+  <!-- Panel -->
+  <div class="panel">
+    <div class="panel-all">
+      <i class="fa-solid fa-bars"></i>
+      All
+    </div>
+    <div class="panel-ops">
+      <p><a href="bestseller.html">Bestsellers</a></p>
+      <p><a href="product.html">Products</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="offer.html">Offers</a></p>
+      <p><a href="upcoming.html">Upcoming</a></p>
+      <p><a href="track.html">Track</a></p>
+      <p><a href="cart.html">Cart</a></p>
+      <p><a href="shipment.html">Shipment</a></p>
+      <p><a href="help.html">Help</a></p>
+      <p><a href="login.html">Login</a></p>
+    </div>
+    <div class="panel-deals">Shop deals in Electronics</div>
   </div>
 
-  <!-- Boxes -->
-  <div class="back">
-    <div class="box-container">
-      <div class="box box1">
-        <h2>Product 1</h2>
-        <p>High-quality bearing for heavy-duty use.</p>
-      </div>
-      <div class="box box2">
-        <h2>Product 2</h2>
-        <p>Precision-engineered cross bearing component.</p>
-      </div>
-      <div class="box box3">
-        <h2>Product 3</h2>
-        <p>Durable accessories to enhance performance.</p>
-      </div>
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-msg">
+      <p>
+        You are on KRV.com. You can also shop on KRV India for millions of
+        products with fast delivery.
+        <a href="#">Click here to go to KRV.in</a>
+      </p>
     </div>
   </div>
 
-  <!-- Background Repeats -->
-  <div class="back"></div>
-  <div class="back"></div>
+  <!-- Content Section -->
+  <div class="shop-section">
+    <div class="box">
+      <h2>Harvester Blades</h2>
+      <img src="blade 1.png" alt="Blade 1" />
+      <p><a href="product.html">See more</a></p>
+    </div>
 
-  <!-- JS to Display Logged In Username -->
-  <script>
-    const user = localStorage.getItem("loggedInUser");
-    if (user) {
-      document.getElementById("welcomeUser").textContent = `Welcome, ${user}!`;
-    }
-  </script>
+    <div class="box">
+      <h2>Bearings</h2>
+      <img src="bearing 1.png" alt="Bearing 1" />
+      <p><a href="product.html">See more</a></p>
+    </div>
+
+    <div class="box">
+      <h2>Cross Joints</h2>
+      <img src="cross 1.png" alt="Cross 1" />
+      <p><a href="product.html">See more</a></p>
+    </div>
+
+    <div class="box">
+      <h2>Upcoming Products</h2>
+      <img src="mix.png" alt="Upcoming" />
+      <p><a href="upcoming.html">See more</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="foot-panel1">Back to Top</div>
+    <div class="foot-panel2">
+      <ul>
+        <p>Get to Know Us</p>
+        <a href="about.html">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Press Releases</a>
+      </ul>
+      <ul>
+        <p>Connect with Us</p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </ul>
+      <ul>
+        <p>Make Money with Us</p>
+        <a href="#">Sell on KRV</a>
+        <a href="#">Advertise</a>
+        <a href="#">Become an Affiliate</a>
+      </ul>
+    </div>
+    <div class="foot-panel3">&copy; 2025 KRV Industries</div>
+  </footer>
 </body>
 </html>
